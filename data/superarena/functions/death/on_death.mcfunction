@@ -1,6 +1,4 @@
-tellraw @a ["",{"selector":"@s"},{"text":" will be revived in "},{"score":{"name":"SA_TRACKER","objective":"SA_DEAD_M"}},{"text":" minutes.","color":"yellow"}]
-
-execute at @s as @p run forceload add ~ ~
+execute if score SA_TRACKER SA_PREP_IN_PROG matches 1 run tellraw @a ["",{"selector":"@s"},{"text":" will be revived in "},{"score":{"name":"SA_TRACKER","objective":"SA_DEAD_M"}},{"text":" minutes.","color":"yellow"}]
 
 scoreboard players set @s SA_IS_DEAD 1
 scoreboard players operation @s SA_DEAD_S = SA_TRACKER SA_DEAD_M

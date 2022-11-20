@@ -8,4 +8,4 @@ effect give @s slow_falling 5
 effect give @s regeneration 15
 effect give @s resistance 15 30
 effect give @s fire_resistance 15
-effect give @s regeneration 30 3
+effect give @s regeneration 15 3

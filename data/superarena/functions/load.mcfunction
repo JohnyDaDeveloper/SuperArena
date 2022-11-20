@@ -8,6 +8,7 @@ scoreboard objectives add SA_HP health
 gamerule sendCommandFeedback false
 gamerule announceAdvancements false
 
+scoreboard objectives add SA_PREP_IN_PROG dummy
 scoreboard objectives add SA_PREP_LEN_H dummy
 scoreboard objectives add SA_PREP_LEN_M dummy
 scoreboard objectives add SA_PREP_REM_H dummy

@@ -2,6 +2,8 @@ tellraw @a ["",{"text":"Preparation phase","color":"yellow"},{"text":" started, 
 
 spreadplayers 0 0 5000 10000 true @a
 
+scoreboard players set SA_TRACKER SA_PREP_IN_PROG 1
+
 execute as @p run function superarena:prep/calculate_minutes
 
 function superarena:setup_time_bossbar
