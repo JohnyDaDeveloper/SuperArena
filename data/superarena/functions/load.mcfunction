@@ -5,8 +5,7 @@ scoreboard objectives add SA_DEBUG dummy
 
 scoreboard objectives add SA_HP health
 
-execute if score SA_TRACKER SA_DEBUG matches 1 run gamerule sendCommandFeedback true
-execute if score SA_TRACKER SA_DEBUG matches 0 run gamerule sendCommandFeedback false
+gamerule sendCommandFeedback false
 gamerule announceAdvancements false
 
 scoreboard objectives add SA_PREP_LEN_H dummy

@@ -1,0 +1,13 @@
+{
+    "criteria": {
+        "setupBookUnlocked": {
+            "trigger": "minecraft:recipe_unlocked",
+            "conditions": {
+                "recipe": "superarena:command_book"
+            }
+        }
+    },
+    "rewards": {
+        "function": "superarena:give/command_book"
+    }
+}
