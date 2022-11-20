@@ -1,0 +1,1 @@
+execute as @a if score @s SA_DEATHS > @s SA_FORGIVEN_DEATHS unless score @s SA_IS_DEAD matches 1 run function superarena:death/on_death
