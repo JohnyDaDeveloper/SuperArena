@@ -1,7 +1,10 @@
-tellraw @a ["",{"text":"=================","color":"green"},{"text":" Super Arena","bold":true,"color":"red"},{"text":" setup","color":"yellow"},{"text":" =================","color":"green"}]
-tellraw @a {"text":"Preparation time length:","color":"yellow"}
+tellraw @s ["",{"text":"=================","color":"green"},{"text":" Super Arena","bold":true,"color":"red"},{"text":" setup","color":"yellow"},{"text":" =================","color":"green"}]
+tellraw @s {"text":"General:","color":"yellow"}
+execute if score SA_TRACKER SA_DEBUG matches 1 run tellraw @s ["",{"text":"Debug mode: "},{"text":"ON","color":"green","clickEvent":{"action":"run_command","value":"/function superarena:debug/enable"}},{"text":" "},{"text":"OFF","clickEvent":{"action":"run_command","value":"/function superarena:debug/disable"}}]
+execute if score SA_TRACKER SA_DEBUG matches 0 run tellraw @s ["",{"text":"Debug mode: "},{"text":"ON","clickEvent":{"action":"run_command","value":"/function superarena:debug/enable"}},{"text":" "},{"text":"OFF","color":"red","clickEvent":{"action":"run_command","value":"/function superarena:debug/disable"}}]
+tellraw @s {"text":"Preparation time length:","color":"yellow"}
 tellraw @s ["",{"text":"+","clickEvent":{"action":"run_command","value":"/function superarena:prep/add_hour"}},{"text":" "},{"score":{"name":"SA_TRACKER","objective":"SA_PREP_LEN_H"}},{"text":" "},{"text":"-","clickEvent":{"action":"run_command","value":"/function superarena:prep/sub_hour"}},{"text":" hours"}]
-tellraw @a ["",{"text":"+","clickEvent":{"action":"run_command","value":"/execute as @s run function superarena:prep/add_15_minutes"}},{"text":" "},{"score":{"name":"SA_TRACKER","objective":"SA_PREP_LEN_M"}},{"text":" "},{"text":"-","clickEvent":{"action":"run_command","value":"/execute as @s run function superarena:prep/sub_15_minutes"}},{"text":" minutes"}]
-tellraw @a {"text":"Death length:","color":"yellow"}
-tellraw @a ["",{"text":"+","clickEvent":{"action":"run_command","value":"/execute as @p run function superarena:death/add_5_minutes"}},{"text":" "},{"score":{"name":"SA_TRACKER","objective":"SA_DEAD_M"}},{"text":" "},{"text":"-","clickEvent":{"action":"run_command","value":"/execute as @p run function superarena:death/sub_5_minutes"}},{"text":" minutes"}]
-tellraw @a {"text":"=====================================================","color":"green"}
+tellraw @s ["",{"text":"+","clickEvent":{"action":"run_command","value":"/function superarena:prep/add_15_minutes"}},{"text":" "},{"score":{"name":"SA_TRACKER","objective":"SA_PREP_LEN_M"}},{"text":" "},{"text":"-","clickEvent":{"action":"run_command","value":"/function superarena:prep/sub_15_minutes"}},{"text":" minutes"}]
+tellraw @s {"text":"Death length:","color":"yellow"}
+tellraw @s ["",{"text":"+","clickEvent":{"action":"run_command","value":"/function superarena:death/add_5_minutes"}},{"text":" "},{"score":{"name":"SA_TRACKER","objective":"SA_DEAD_M"}},{"text":" "},{"text":"-","clickEvent":{"action":"run_command","value":"/function superarena:death/sub_5_minutes"}},{"text":" minutes"}]
+tellraw @s {"text":"=====================================================","color":"green"}
