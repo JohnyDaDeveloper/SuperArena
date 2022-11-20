@@ -1,3 +1,5 @@
+execute if score SA_TRACKER SA_DEBUG matches 1 run tellraw @a {"text":"[SA DEBUG] Prep tick","color":"#D98943"}
+
 execute as @p store result bossbar superarena:time value run scoreboard players get SA_TRACKER SA_PREP_REM_TIME
 
 scoreboard players remove SA_TRACKER SA_PREP_REM_TIME 1
