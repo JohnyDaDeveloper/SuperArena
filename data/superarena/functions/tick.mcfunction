@@ -1,4 +1,4 @@
-execute as @a[scores={SA_SET_DEFAULTS=0}] run function superarena:set_defaults
+execute as @a unless score @s SA_SET_DEFAULTS matches 1 run function superarena:set_defaults
 
 function superarena:death/check_deaths
 
