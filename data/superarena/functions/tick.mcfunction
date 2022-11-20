@@ -10,3 +10,6 @@ execute as @a[scores={SA_DEAD_S=0, SA_IS_DEAD=1}] run function superarena:death/
 execute as @a at @s unless score @s[scores={SA_HP=1..}] SA_IS_DEAD matches 1 unless block ~ ~ ~ minecraft:water unless block ~ ~ ~ minecraft:lava at @s run spawnpoint @s
 
 kill @e[type=item,nbt={Item:{tag:{SA_BOOK:1b}}}]
+
+function superarena:battle/count_teams
+execute if score SA_TRACKER SA_GAME_PHASE matches 2 if score SA_TRACKER SA_TEAMS_ALIVE matches 1 run function superarena:win/start

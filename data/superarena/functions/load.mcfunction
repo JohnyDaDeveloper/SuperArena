@@ -3,11 +3,23 @@ gamerule announceAdvancements false
 
 bossbar add superarena:time {"text": "Time until BATTLE"}
 
+team add TEAM_RED "Red"
+team add TEAM_GREEN "Green"
+team add TEAM_BLUE "Blue"
+team modify TEAM_RED color red
+team modify TEAM_GREEN color green
+team modify TEAM_BLUE color aqua
+team join TEAM_RED Red
+team join TEAM_GREEN Green
+team join TEAM_BLUE Blue
+
 scoreboard objectives add SA_SET_DEFAULTS dummy
 scoreboard objectives add SA_DEBUG dummy
 
 scoreboard objectives add SA_HP health
 scoreboard objectives add SA_GAME_PHASE dummy
+scoreboard objectives add SA_TEAM_M_C dummy {"text":"Players","color":"yellow"}
+scoreboard objectives add SA_TEAMS_ALIVE dummy
 
 scoreboard objectives add SA_PREP_LEN_H dummy
 scoreboard objectives add SA_PREP_LEN_M dummy
@@ -34,5 +46,6 @@ scoreboard players set SA_TRACKER SA_1 1
 setworldspawn 0 0 0
 
 execute as @p unless score SA_TRACKER SA_SET_DEFAULTS matches 1 run function superarena:set_tracker_defaults
+scoreboard objectives setdisplay sidebar SA_TEAM_M_C
 
 tellraw @a ["",{"text":"Super Arena","bold":true,"color":"red"},{"text":" loaded","color":"yellow"}]
