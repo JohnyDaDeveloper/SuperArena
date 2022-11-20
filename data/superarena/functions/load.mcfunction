@@ -1,14 +1,14 @@
+gamerule sendCommandFeedback false
+gamerule announceAdvancements false
+
 bossbar add superarena:time {"text": "Time until BATTLE"}
 
 scoreboard objectives add SA_SET_DEFAULTS dummy
 scoreboard objectives add SA_DEBUG dummy
 
 scoreboard objectives add SA_HP health
+scoreboard objectives add SA_GAME_PHASE dummy
 
-gamerule sendCommandFeedback false
-gamerule announceAdvancements false
-
-scoreboard objectives add SA_PREP_IN_PROG dummy
 scoreboard objectives add SA_PREP_LEN_H dummy
 scoreboard objectives add SA_PREP_LEN_M dummy
 scoreboard objectives add SA_PREP_REM_H dummy

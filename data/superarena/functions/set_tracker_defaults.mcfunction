@@ -2,7 +2,7 @@ tellraw @a {"text":"[SA DEBUG] Setting tracker defaults","color":"#D98943"}
 
 scoreboard players set SA_TRACKER SA_SET_DEFAULTS 1
 
-scoreboard players set SA_TRACKER SA_PREP_IN_PROG 0
+scoreboard players set SA_TRACKER SA_GAME_PHASE 0
 scoreboard players set SA_TRACKER SA_PREP_LEN_H 2
 scoreboard players set SA_TRACKER SA_PREP_LEN_M 0
 

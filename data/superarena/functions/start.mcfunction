@@ -1,8 +1,10 @@
 tellraw @a ["",{"text":"Preparation phase","color":"yellow"},{"text":" started, "},{"score":{"name":"SA_TRACKER","objective":"SA_PREP_LEN_H"}},{"text":" hours and "},{"score":{"name":"SA_TRACKER","objective":"SA_PREP_LEN_M"}},{"text":" minutes left."}]
 
+gamemode survival @a
+
 spreadplayers 0 0 5000 10000 true @a
 
-scoreboard players set SA_TRACKER SA_PREP_IN_PROG 1
+scoreboard players set SA_TRACKER SA_GAME_PHASE 1
 
 execute as @p run function superarena:prep/calculate_minutes
 
