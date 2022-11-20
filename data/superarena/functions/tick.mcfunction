@@ -2,6 +2,8 @@ execute as @a[scores={SA_SET_DEFAULTS=0}] run function superarena:set_defaults
 
 function superarena:death/check_deaths
 
+execute as @a[scores={SA_IS_DEAD=1}] unless score @s SA_DEATH_PHASE = SA_TRACKER SA_GAME_PHASE run function superarena:death/revive
+
 execute as @a[scores={SA_IS_DEAD=1}] run gamemode spectator @s
 execute as @a[scores={SA_DEAD_S=0, SA_IS_DEAD=1}] run function superarena:death/revive
 

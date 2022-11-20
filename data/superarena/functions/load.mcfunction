@@ -22,6 +22,7 @@ scoreboard objectives add SA_IS_DEAD dummy
 scoreboard objectives add SA_DEAD_M dummy
 scoreboard objectives add SA_DEAD_S dummy
 scoreboard objectives add SA_DEAD_HELP dummy
+scoreboard objectives add SA_DEATH_PHASE dummy
 
 scoreboard objectives add SA_60 dummy
 scoreboard objectives add SA_15 dummy

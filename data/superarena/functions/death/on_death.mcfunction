@@ -4,4 +4,4 @@ scoreboard players set @s SA_IS_DEAD 1
 scoreboard players operation @s SA_DEAD_S = SA_TRACKER SA_DEAD_M
 scoreboard players operation @s SA_DEAD_S *= SA_TRACKER SA_60
 
-scoreboard players set @s SA_DEATH_TP 0
+scoreboard players operation @s SA_DEATH_PHASE = SA_TRACKER SA_GAME_PHASE
