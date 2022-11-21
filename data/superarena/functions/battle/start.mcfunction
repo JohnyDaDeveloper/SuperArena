@@ -18,3 +18,5 @@ worldborder center 0 0
 worldborder set 1500
 worldborder set 200 900
 tellraw @a {"text":"World border set to 1500x1500, it will shrink to 200x200 over 15 minutes.","color":"yellow"}
+
+schedule function superarena:battle/min_wb_shrink_in_15_m 900s replace
