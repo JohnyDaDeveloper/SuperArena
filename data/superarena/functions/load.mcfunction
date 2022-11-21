@@ -46,6 +46,5 @@ scoreboard players set SA_TRACKER SA_1 1
 setworldspawn 0 0 0
 
 execute as @p unless score SA_TRACKER SA_SET_DEFAULTS matches 1 run function superarena:set_tracker_defaults
-scoreboard objectives setdisplay sidebar SA_TEAM_M_C
 
 tellraw @a ["",{"text":"Super Arena","bold":true,"color":"red"},{"text":" loaded","color":"yellow"}]

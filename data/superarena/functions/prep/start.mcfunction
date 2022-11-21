@@ -1,6 +1,10 @@
 tellraw @a ["",{"text":"Preparation phase","color":"yellow"},{"text":" started, "},{"score":{"name":"SA_TRACKER","objective":"SA_PREP_LEN_H"}},{"text":" hours and "},{"score":{"name":"SA_TRACKER","objective":"SA_PREP_LEN_M"}},{"text":" minutes left."}]
 
 gamemode survival @a
+effect clear @a
+effect give @a regeneration 10 2
+effect give @a saturation 10
+effect give @a resistance 10 10
 
 worldborder center 0 0
 worldborder set 25000

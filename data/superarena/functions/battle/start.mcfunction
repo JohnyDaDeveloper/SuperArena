@@ -2,6 +2,11 @@ title @a subtitle {"text":"Last team standing wins","color":"yellow"}
 title @a title {"text":"Fight!","color":"red"}
 
 bossbar set superarena:time visible false
+scoreboard objectives setdisplay sidebar SA_TEAM_M_C
+
+effect give @a regeneration 10 2
+effect give @a saturation 10
+effect give @a resistance 10 10
 
 scoreboard players set SA_TRACKER SA_GAME_PHASE 2
 
