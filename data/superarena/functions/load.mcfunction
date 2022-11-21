@@ -20,6 +20,7 @@ scoreboard objectives add SA_HP health
 scoreboard objectives add SA_GAME_PHASE dummy
 scoreboard objectives add SA_TEAM_M_C dummy {"text":"Players","color":"yellow"}
 scoreboard objectives add SA_TEAMS_ALIVE dummy
+scoreboard objectives add SA_TEAM_WINNER dummy
 
 scoreboard objectives add SA_PREP_LEN_H dummy
 scoreboard objectives add SA_PREP_LEN_M dummy
