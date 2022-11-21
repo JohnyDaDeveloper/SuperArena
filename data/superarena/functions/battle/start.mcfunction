@@ -1,3 +1,5 @@
+execute if score SA_TRACKER SA_DEBUG matches 1 run tellraw @a ["",{"text":"[SA DEBUG] Starting battle phase","color":"#D98943"}]
+
 title @a subtitle {"text":"Last team standing wins","color":"yellow"}
 title @a title {"text":"Fight!","color":"red"}
 
