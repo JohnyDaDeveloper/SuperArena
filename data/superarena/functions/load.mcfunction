@@ -44,6 +44,7 @@ scoreboard players set SA_TRACKER SA_15 15
 scoreboard players set SA_TRACKER SA_1 1
 
 setworldspawn 0 0 0
+worldborder center 0 0
 
 execute as @p unless score SA_TRACKER SA_SET_DEFAULTS matches 1 run function superarena:set_tracker_defaults
 

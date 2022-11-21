@@ -9,7 +9,6 @@ effect give @a regeneration 10 2
 effect give @a saturation 10
 effect give @a resistance 10 10
 
-worldborder center 0 0
 worldborder set 25000
 
 spreadplayers 0 0 5000 10000 true @a
