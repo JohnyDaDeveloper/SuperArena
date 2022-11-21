@@ -1,12 +1,12 @@
 {
     "type": "minecraft:crafting_shaped",
     "pattern": [
-        "#  ",
-        " # ",
-        "#  "
+        "d  ",
+        "dd ",
+        "   "
     ],
     "key": {
-        "#": {
+        "d": {
             "item": "minecraft:dirt"
         }
     },
