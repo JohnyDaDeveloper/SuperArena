@@ -9,7 +9,6 @@ execute as @a[team=TEAM_GREEN,scores={SA_IS_DEAD=0}] run scoreboard players add 
 execute as @a[team=TEAM_BLUE,scores={SA_IS_DEAD=0}] run scoreboard players add Blue SA_TEAM_M_C 1
 execute as @a[team=TEAM_YELLOW,scores={SA_IS_DEAD=0}] run scoreboard players add Yellow SA_TEAM_M_C 1
 execute as @a[team=TEAM_WHITE,scores={SA_IS_DEAD=0}] run scoreboard players add White SA_TEAM_M_C 1
-scoreboard players add Red SA_TEAM_M_C 1
 
 scoreboard players set SA_TRACKER SA_TEAMS_ALIVE 0
 
