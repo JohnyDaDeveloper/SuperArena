@@ -11,6 +11,8 @@ worldborder set 25000
 execute unless score Red SA_TEAM_M_C matches 0 run scoreboard players set SA_TRACKER SA_TEAM_WINNER 1
 execute unless score Green SA_TEAM_M_C matches 0 run scoreboard players set SA_TRACKER SA_TEAM_WINNER 2
 execute unless score Blue SA_TEAM_M_C matches 0 run scoreboard players set SA_TRACKER SA_TEAM_WINNER 3
+execute unless score Yellow SA_TEAM_M_C matches 0 run scoreboard players set SA_TRACKER SA_TEAM_WINNER 4
+execute unless score White SA_TEAM_M_C matches 0 run scoreboard players set SA_TRACKER SA_TEAM_WINNER 5
 
 execute unless score Red SA_TEAM_M_C matches 0 run function superarena:win/announce_red_win
 execute unless score Green SA_TEAM_M_C matches 0 run function superarena:win/announce_green_win
