@@ -15,5 +15,7 @@ execute unless score Blue SA_TEAM_M_C matches 0 run scoreboard players set SA_TR
 execute unless score Red SA_TEAM_M_C matches 0 run function superarena:win/announce_red_win
 execute unless score Green SA_TEAM_M_C matches 0 run function superarena:win/announce_green_win
 execute unless score Blue SA_TEAM_M_C matches 0 run function superarena:win/announce_blue_win
+execute unless score Yellow SA_TEAM_M_C matches 0 run function superarena:win/announce_yellow_win
+execute unless score White SA_TEAM_M_C matches 0 run function superarena:win/announce_white_win
 
 function superarena:win/tick
