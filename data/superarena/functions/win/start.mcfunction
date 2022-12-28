@@ -3,7 +3,7 @@ schedule clear superarena:battle/shrink_wb_minimum
 
 execute if score SA_TRACKER SA_DEBUG matches 1 run tellraw @a ["",{"text":"[SA DEBUG] Starting win phase","color":"#D98943"}]
 
-scoreboard players set SA_TRACKER SA_GAME_PHASE 3
+scoreboard players set SA_TRACKER SA_GAME_PHASE 4
 scoreboard objectives setdisplay sidebar
 
 worldborder set 25000

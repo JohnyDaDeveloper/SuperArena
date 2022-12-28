@@ -8,4 +8,4 @@ execute if score SA_TRACKER SA_TEAM_WINNER matches 3 as @a[team=TEAM_BLUE] at @s
 execute if score SA_TRACKER SA_TEAM_WINNER matches 4 as @a[team=TEAM_PURPLE] at @s run function superarena:win/tick_purple
 execute if score SA_TRACKER SA_TEAM_WINNER matches 5 as @a[team=TEAM_GRAY] at @s run function superarena:win/tick_gray
 
-execute if score SA_TRACKER SA_GAME_PHASE matches 3 run schedule function superarena:win/tick 1s replace
+execute if score SA_TRACKER SA_GAME_PHASE matches 4 run schedule function superarena:win/tick 1s replace

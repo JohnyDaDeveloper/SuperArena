@@ -14,7 +14,7 @@ worldborder set 25000
 
 spreadplayers 0 0 5000 10000 true @a
 
-scoreboard players set SA_TRACKER SA_GAME_PHASE 1
+scoreboard players set SA_TRACKER SA_GAME_PHASE 2
 
 execute as @p run function superarena:prep/calculate_minutes
 

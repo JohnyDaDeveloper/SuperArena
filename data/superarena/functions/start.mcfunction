@@ -1,2 +1,2 @@
-execute unless score SA_TRACKER SA_GAME_PHASE matches 0 run tellraw @s {"text":"Game is already started.","color":"yellow"}
-execute if score SA_TRACKER SA_GAME_PHASE matches 0 run function superarena:prep/start
+execute unless score SA_TRACKER SA_GAME_PHASE matches 1 run tellraw @s {"text":"Game is already started.","color":"yellow"}
+execute if score SA_TRACKER SA_GAME_PHASE matches 1 run function superarena:prep/start

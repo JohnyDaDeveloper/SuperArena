@@ -10,7 +10,7 @@ effect give @a regeneration 10 2
 effect give @a saturation 10
 effect give @a resistance 10 10
 
-scoreboard players set SA_TRACKER SA_GAME_PHASE 2
+scoreboard players set SA_TRACKER SA_GAME_PHASE 3
 
 spreadplayers 0 0 200 500 true @a
 
