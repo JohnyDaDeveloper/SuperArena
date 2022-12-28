@@ -49,7 +49,7 @@ scoreboard objectives add SA_5 dummy
 scoreboard objectives add SA_1 dummy
 scoreboard players set SA_TRACKER SA_60 60
 scoreboard players set SA_TRACKER SA_15 15
-scoreboard players set SA_TRACKER SA_15 5
+scoreboard players set SA_TRACKER SA_5 5
 scoreboard players set SA_TRACKER SA_1 1
 
 setworldspawn 0 0 0
