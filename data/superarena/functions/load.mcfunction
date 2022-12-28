@@ -6,18 +6,18 @@ bossbar add superarena:time {"text": "Time until BATTLE"}
 team add TEAM_RED "Red"
 team add TEAM_GREEN "Green"
 team add TEAM_BLUE "Blue"
-team add TEAM_YELLOW "Yellow"
-team add TEAM_WHITE "White"
+team add TEAM_PURPLE "Purple"
+team add TEAM_GRAY "Gray"
 team modify TEAM_RED color red
 team modify TEAM_GREEN color green
 team modify TEAM_BLUE color aqua
-team modify TEAM_YELLOW color yellow
-team modify TEAM_WHITE color white
+team modify TEAM_PURPLE color light_purple
+team modify TEAM_GRAY color gray
 team join TEAM_RED Red
 team join TEAM_GREEN Green
 team join TEAM_BLUE Blue
-team join TEAM_YELLOW Yellow
-team join TEAM_WHITE White
+team join TEAM_PURPLE Purple
+team join TEAM_GRAY Gray
 
 scoreboard objectives add SA_SET_DEFAULTS dummy
 scoreboard objectives add SA_DEBUG dummy
